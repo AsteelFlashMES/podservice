@@ -1,0 +1,157 @@
+2018-09-05 14:16:22.201  INFO 4308 --- [main] com.asteelflash.PodServiceApplication    : Starting PodServiceApplication on feiqiyong with PID 4308 (F:\gitprogram\podservice\target\classes started by Administrator in F:\gitprogram\podservice)
+2018-09-05 14:16:22.206  INFO 4308 --- [main] com.asteelflash.PodServiceApplication    : No active profile set, falling back to default profiles: default
+2018-09-05 14:16:22.372  INFO 4308 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@418e7838: startup date [Wed Sep 05 14:16:22 GMT+08:00 2018]; root of context hierarchy
+2018-09-05 14:16:23.873  INFO 4308 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$32524fc0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-05 14:16:24.356  INFO 4308 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-09-05 14:16:24.389  INFO 4308 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-09-05 14:16:24.389  INFO 4308 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-09-05 14:16:24.393  INFO 4308 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [F:\java\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;F:\java\bin;F:\java\jre\bin;F:\apache-maven-3.1.1/bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\.;F:\Oracle Instant Client\Version 12.1.0.2.0\32bit\instantclient_12_1;C:\Windows\System32\WindowsPowerShell\v1.0\;F:\tortoiseSVN\bin;D:\mysql\bin;F:\Git\cmd;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\ssh;D:\搜狐影音\5.0.2.11;.]
+2018-09-05 14:16:24.557  INFO 4308 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-09-05 14:16:24.558  INFO 4308 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2186 ms
+2018-09-05 14:16:24.737  INFO 4308 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-09-05 14:16:24.743  INFO 4308 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-05 14:16:24.743  INFO 4308 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-05 14:16:24.743  INFO 4308 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-05 14:16:24.744  INFO 4308 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-05 14:16:25.262  INFO 4308 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-09-05 14:16:25.278  INFO 4308 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-09-05 14:16:25.351  INFO 4308 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-09-05 14:16:25.353  INFO 4308 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-09-05 14:16:25.413  INFO 4308 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-09-05 14:16:25.528  INFO 4308 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-09-05 14:16:26.083  INFO 4308 --- [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (com.microsoft.sqlserver.jdbc.SQLServerConnection.getNetworkTimeout()I)
+2018-09-05 14:16:26.121  INFO 4308 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-09-05 14:16:26.140  INFO 4308 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.SQLServer2008Dialect
+2018-09-05 14:16:51.704  INFO 4308 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-09-05 14:16:52.453  WARN 4308 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-09-05 14:16:52.507  INFO 4308 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/pod/operateMaterialCode],methods=[GET]}" onto public com.asteelflash.dto.ResponseDto com.asteelflash.controller.PodDataController.operateMaterialCode(int,int,java.lang.String)
+2018-09-05 14:16:52.508  INFO 4308 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/pod/addPackageInfo],methods=[POST]}" onto public com.asteelflash.dto.ResponseDto com.asteelflash.controller.PodDataController.addPackageInfo(com.asteelflash.dto.PackageInfoDto)
+2018-09-05 14:16:52.508  INFO 4308 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/pod/receiveData],methods=[POST]}" onto public com.asteelflash.dto.ResponseDto com.asteelflash.controller.PodDataController.savePodData(com.asteelflash.dto.PodPostDto)
+2018-09-05 14:16:52.509  INFO 4308 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/pod/materialData],methods=[GET]}" onto public com.asteelflash.dto.MaterialDataDto com.asteelflash.controller.PodDataController.findMaterialData(int,long,long)
+2018-09-05 14:16:52.509  INFO 4308 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/pod/materialCode],methods=[GET]}" onto public com.asteelflash.dto.MaterialCodeResultDto com.asteelflash.controller.PodDataController.getMaterialCode(int)
+2018-09-05 14:16:52.509  INFO 4308 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/pod/getServerTime],methods=[GET]}" onto public com.asteelflash.dto.ResponseDto com.asteelflash.controller.PodDataController.getServerTime(int)
+2018-09-05 14:16:52.510  INFO 4308 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+2018-09-05 14:16:52.512  INFO 4308 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-09-05 14:16:52.513  INFO 4308 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-09-05 14:16:52.513  INFO 4308 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-09-05 14:16:52.518  INFO 4308 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-05 14:16:52.518  INFO 4308 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-05 14:16:52.664  INFO 4308 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-05 14:16:52.866  INFO 4308 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@418e7838: startup date [Wed Sep 05 14:16:22 GMT+08:00 2018]; root of context hierarchy
+2018-09-05 14:16:52.914  INFO 4308 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-05 14:16:52.914  INFO 4308 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-05 14:16:53.177  INFO 4308 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-09-05 14:16:53.179  INFO 4308 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-09-05 14:16:53.184  INFO 4308 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-09-05 14:16:53.197  INFO 4308 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-09-05 14:16:53.213  INFO 4308 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found {0} custom documentation plugin(s)
+2018-09-05 14:16:53.222  INFO 4308 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-09-05 14:16:53.225  INFO 4308 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method addPackageInfo was pod-data-interface
+2018-09-05 14:16:53.226  INFO 4308 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: addPackageInfo belongs to groups: [[ResourceGroup{groupName='pod-data-interface', position=0, controller=com.asteelflash.controller.PodDataController}]] 
+2018-09-05 14:16:53.227  INFO 4308 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getServerTime was pod-data-interface
+2018-09-05 14:16:53.227  INFO 4308 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: getServerTime belongs to groups: [[ResourceGroup{groupName='pod-data-interface', position=0, controller=com.asteelflash.controller.PodDataController}]] 
+2018-09-05 14:16:53.227  INFO 4308 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getMaterialCode was pod-data-interface
+2018-09-05 14:16:53.227  INFO 4308 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: getMaterialCode belongs to groups: [[ResourceGroup{groupName='pod-data-interface', position=0, controller=com.asteelflash.controller.PodDataController}]] 
+2018-09-05 14:16:53.228  INFO 4308 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method findMaterialData was pod-data-interface
+2018-09-05 14:16:53.228  INFO 4308 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: findMaterialData belongs to groups: [[ResourceGroup{groupName='pod-data-interface', position=0, controller=com.asteelflash.controller.PodDataController}]] 
+2018-09-05 14:16:53.228  INFO 4308 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method operateMaterialCode was pod-data-interface
+2018-09-05 14:16:53.228  INFO 4308 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: operateMaterialCode belongs to groups: [[ResourceGroup{groupName='pod-data-interface', position=0, controller=com.asteelflash.controller.PodDataController}]] 
+2018-09-05 14:16:53.228  INFO 4308 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method savePodData was pod-data-interface
+2018-09-05 14:16:53.228  INFO 4308 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: savePodData belongs to groups: [[ResourceGroup{groupName='pod-data-interface', position=0, controller=com.asteelflash.controller.PodDataController}]] 
+2018-09-05 14:16:53.231  INFO 4308 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Created resource listing Path: /default/pod-data-interface Description: pod-data-interface Position: 0
+2018-09-05 14:16:53.249  INFO 4308 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.asteelflash.dto.ResponseDto(true)
+2018-09-05 14:16:53.250  INFO 4308 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key com.asteelflash.dto.ResponseDto(true)
+2018-09-05 14:16:53.254  INFO 4308 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.asteelflash.dto.ResponseDto(true)
+2018-09-05 14:16:53.254  INFO 4308 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.asteelflash.dto.ResponseDto(true)
+2018-09-05 14:16:53.281  INFO 4308 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.asteelflash.dto.ResponseDto(true)
+2018-09-05 14:16:53.282  INFO 4308 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key com.asteelflash.dto.ResponseDto(true)
+2018-09-05 14:16:53.284  INFO 4308 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.asteelflash.dto.ResponseDto(true)
+2018-09-05 14:16:53.284  INFO 4308 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.asteelflash.dto.ResponseDto(true)
+2018-09-05 14:16:53.286  INFO 4308 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.asteelflash.dto.PackageInfoDto(false)
+2018-09-05 14:16:53.286  INFO 4308 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key com.asteelflash.dto.PackageInfoDto(false)
+2018-09-05 14:16:53.286  INFO 4308 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.asteelflash.dto.PackageInfoDto(false)
+2018-09-05 14:16:53.286  INFO 4308 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.asteelflash.dto.PackageInfoDto(false)
+2018-09-05 14:16:53.287  INFO 4308 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.asteelflash.dto.PackageInfoDto(false)
+2018-09-05 14:16:53.287  INFO 4308 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key com.asteelflash.dto.PackageInfoDto(false)
+2018-09-05 14:16:53.287  INFO 4308 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.asteelflash.dto.PackageInfoDto(false)
+2018-09-05 14:16:53.287  INFO 4308 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.asteelflash.dto.PackageInfoDto(false)
+2018-09-05 14:16:53.288  INFO 4308 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /api/pod/addPackageInfo.com.asteelflash.controller.PodDataController.addPackageInfo.DefaultGenericTypeNamingStrategy
+2018-09-05 14:16:53.288  INFO 4308 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /api/pod/addPackageInfo.com.asteelflash.controller.PodDataController.addPackageInfo.DefaultGenericTypeNamingStrategy
+2018-09-05 14:16:53.300  INFO 4308 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method addPackageInfo was pod-data-interface
+2018-09-05 14:16:53.313  INFO 4308 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method addPackageInfo was pod-data-interface
+2018-09-05 14:16:53.321  INFO 4308 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.asteelflash.dto.MaterialDataDto(true)
+2018-09-05 14:16:53.321  INFO 4308 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key com.asteelflash.dto.MaterialDataDto(true)
+2018-09-05 14:16:53.321  INFO 4308 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.asteelflash.dto.MaterialDataDto(true)
+2018-09-05 14:16:53.321  INFO 4308 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.asteelflash.dto.MaterialDataDto(true)
+2018-09-05 14:16:53.322  INFO 4308 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.asteelflash.dto.MaterialDataDto(true)
+2018-09-05 14:16:53.323  INFO 4308 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key com.asteelflash.dto.MaterialDataDto(true)
+2018-09-05 14:16:53.323  INFO 4308 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.asteelflash.dto.MaterialDataDto(true)
+2018-09-05 14:16:53.323  INFO 4308 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.asteelflash.dto.MaterialDataDto(true)
+2018-09-05 14:16:53.323  INFO 4308 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.asteelflash.dto.PodDataDto(true)
+2018-09-05 14:16:53.323  INFO 4308 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.asteelflash.dto.PodDataDto(true)
+2018-09-05 14:16:53.326  INFO 4308 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.asteelflash.dto.PodDataDto(true)
+2018-09-05 14:16:53.326  INFO 4308 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.asteelflash.dto.PodDataDto(true)
+2018-09-05 14:16:53.327  INFO 4308 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /api/pod/materialData.com.asteelflash.controller.PodDataController.findMaterialData.DefaultGenericTypeNamingStrategy
+2018-09-05 14:16:53.327  INFO 4308 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /api/pod/materialData.com.asteelflash.controller.PodDataController.findMaterialData.DefaultGenericTypeNamingStrategy
+2018-09-05 14:16:53.330  INFO 4308 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method findMaterialData was pod-data-interface
+2018-09-05 14:16:53.330  INFO 4308 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method findMaterialData was pod-data-interface
+2018-09-05 14:16:53.332  INFO 4308 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.asteelflash.dto.MaterialCodeResultDto(true)
+2018-09-05 14:16:53.332  INFO 4308 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key com.asteelflash.dto.MaterialCodeResultDto(true)
+2018-09-05 14:16:53.332  INFO 4308 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.asteelflash.dto.MaterialCodeResultDto(true)
+2018-09-05 14:16:53.332  INFO 4308 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.asteelflash.dto.MaterialCodeResultDto(true)
+2018-09-05 14:16:53.333  INFO 4308 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.asteelflash.dto.MaterialCodeResultDto(true)
+2018-09-05 14:16:53.333  INFO 4308 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key com.asteelflash.dto.MaterialCodeResultDto(true)
+2018-09-05 14:16:53.333  INFO 4308 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.asteelflash.dto.MaterialCodeResultDto(true)
+2018-09-05 14:16:53.333  INFO 4308 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.asteelflash.dto.MaterialCodeResultDto(true)
+2018-09-05 14:16:53.334  INFO 4308 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.asteelflash.dto.MaterialCodeDto(true)
+2018-09-05 14:16:53.334  INFO 4308 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.asteelflash.dto.MaterialCodeDto(true)
+2018-09-05 14:16:53.334  INFO 4308 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.asteelflash.dto.MaterialCodeDto(true)
+2018-09-05 14:16:53.334  INFO 4308 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.asteelflash.dto.MaterialCodeDto(true)
+2018-09-05 14:16:53.334  INFO 4308 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /api/pod/materialCode.com.asteelflash.controller.PodDataController.getMaterialCode.DefaultGenericTypeNamingStrategy
+2018-09-05 14:16:53.335  INFO 4308 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /api/pod/materialCode.com.asteelflash.controller.PodDataController.getMaterialCode.DefaultGenericTypeNamingStrategy
+2018-09-05 14:16:53.336  INFO 4308 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getMaterialCode was pod-data-interface
+2018-09-05 14:16:53.337  INFO 4308 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getMaterialCode was pod-data-interface
+2018-09-05 14:16:53.338  INFO 4308 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.asteelflash.dto.ResponseDto(true)
+2018-09-05 14:16:53.338  INFO 4308 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key com.asteelflash.dto.ResponseDto(true)
+2018-09-05 14:16:53.338  INFO 4308 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.asteelflash.dto.ResponseDto(true)
+2018-09-05 14:16:53.338  INFO 4308 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key com.asteelflash.dto.ResponseDto(true)
+2018-09-05 14:16:53.338  INFO 4308 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /api/pod/getServerTime.com.asteelflash.controller.PodDataController.getServerTime.DefaultGenericTypeNamingStrategy
+2018-09-05 14:16:53.339  INFO 4308 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /api/pod/getServerTime.com.asteelflash.controller.PodDataController.getServerTime.DefaultGenericTypeNamingStrategy
+2018-09-05 14:16:53.340  INFO 4308 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getServerTime was pod-data-interface
+2018-09-05 14:16:53.340  INFO 4308 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getServerTime was pod-data-interface
+2018-09-05 14:16:53.341  INFO 4308 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.asteelflash.dto.ResponseDto(true)
+2018-09-05 14:16:53.342  INFO 4308 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key com.asteelflash.dto.ResponseDto(true)
+2018-09-05 14:16:53.342  INFO 4308 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.asteelflash.dto.ResponseDto(true)
+2018-09-05 14:16:53.342  INFO 4308 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key com.asteelflash.dto.ResponseDto(true)
+2018-09-05 14:16:53.342  INFO 4308 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /api/pod/operateMaterialCode.com.asteelflash.controller.PodDataController.operateMaterialCode.DefaultGenericTypeNamingStrategy
+2018-09-05 14:16:53.342  INFO 4308 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /api/pod/operateMaterialCode.com.asteelflash.controller.PodDataController.operateMaterialCode.DefaultGenericTypeNamingStrategy
+2018-09-05 14:16:53.344  INFO 4308 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method operateMaterialCode was pod-data-interface
+2018-09-05 14:16:53.344  INFO 4308 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method operateMaterialCode was pod-data-interface
+2018-09-05 14:16:53.346  INFO 4308 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.asteelflash.dto.ResponseDto(true)
+2018-09-05 14:16:53.346  INFO 4308 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key com.asteelflash.dto.ResponseDto(true)
+2018-09-05 14:16:53.346  INFO 4308 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.asteelflash.dto.ResponseDto(true)
+2018-09-05 14:16:53.346  INFO 4308 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key com.asteelflash.dto.ResponseDto(true)
+2018-09-05 14:16:53.346  INFO 4308 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.asteelflash.dto.PodPostDto(false)
+2018-09-05 14:16:53.346  INFO 4308 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key com.asteelflash.dto.PodPostDto(false)
+2018-09-05 14:16:53.346  INFO 4308 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.asteelflash.dto.PodPostDto(false)
+2018-09-05 14:16:53.346  INFO 4308 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.asteelflash.dto.PodPostDto(false)
+2018-09-05 14:16:53.347  INFO 4308 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.asteelflash.dto.PodPostDto(false)
+2018-09-05 14:16:53.347  INFO 4308 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key com.asteelflash.dto.PodPostDto(false)
+2018-09-05 14:16:53.347  INFO 4308 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.asteelflash.dto.PodPostDto(false)
+2018-09-05 14:16:53.347  INFO 4308 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.asteelflash.dto.PodPostDto(false)
+2018-09-05 14:16:53.348  INFO 4308 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.asteelflash.dto.PodDataDto(false)
+2018-09-05 14:16:53.348  INFO 4308 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.asteelflash.dto.PodDataDto(false)
+2018-09-05 14:16:53.350  INFO 4308 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.asteelflash.dto.PodDataDto(false)
+2018-09-05 14:16:53.350  INFO 4308 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.asteelflash.dto.PodDataDto(false)
+2018-09-05 14:16:53.350  INFO 4308 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /api/pod/receiveData.com.asteelflash.controller.PodDataController.savePodData.DefaultGenericTypeNamingStrategy
+2018-09-05 14:16:53.350  INFO 4308 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /api/pod/receiveData.com.asteelflash.controller.PodDataController.savePodData.DefaultGenericTypeNamingStrategy
+2018-09-05 14:16:53.351  INFO 4308 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method savePodData was pod-data-interface
+2018-09-05 14:16:53.352  INFO 4308 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method savePodData was pod-data-interface
+2018-09-05 14:16:53.393  INFO 4308 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-09-05 14:16:53.396  INFO 4308 --- [main] com.asteelflash.PodServiceApplication    : Started PodServiceApplication in 31.665 seconds (JVM running for 33.705)
+2018-09-05 14:17:22.842  INFO 4308 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-05 14:17:22.842  INFO 4308 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-05 14:17:22.863  INFO 4308 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2018-09-05 14:18:09.426  INFO 4308 --- [http-nio-8080-exec-10] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
